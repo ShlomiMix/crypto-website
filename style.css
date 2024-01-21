@@ -634,4 +634,9 @@ div#alertOfGraph {
     border-radius: 50%;
     background-color: red;
   }
+
+  .text-alert-graph {
+    font-size: small;
+    
+  }
 }
