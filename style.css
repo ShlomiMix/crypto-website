@@ -520,7 +520,8 @@ div#alertOfGraph {
 
 
  html, body {
-    height: 100%;
+    height: 30vh !important;
+    min-height: unset !important;
     margin: 0;
     padding: 0;
     text-align: center;
