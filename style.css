@@ -519,20 +519,18 @@ div#alertOfGraph {
 @media ((min-width: 300px) and (max-width: 768px)) {
 
 
-  body {
+ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
     text-align: center;
     background-image: url(assets/images/gold-bitcoin-logo-emerging-from-beautiful-earth-scenery-free-photo.webp);
-    background-repeat: no-repeat; 
-    background-position: center;
-    background-attachment: fixed;       
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
-    height:100%;
-    width:100%; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    -o-background-size: cover;
+    -moz-background-size: cover;
   }
 
 
