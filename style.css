@@ -527,7 +527,7 @@ div#alertOfGraph {
     background-image: url(assets/images/gold-bitcoin-logo-emerging-from-beautiful-earth-scenery-free-photo.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center center;
   }
 
