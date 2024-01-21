@@ -115,7 +115,7 @@ function removeSearchBox() {
     );
   }
 
-  
+
   // sort coins by price
   function sortByPrice() {
     const sortingHighToLow = sortByHighToLow === "Price (high - low)" ? 1 : -1;
@@ -465,7 +465,7 @@ function removeSearchBox() {
     const chartContainerCoins = document.querySelector(".chartContainerCoins");
 
     chartContainerCoins.innerHTML = `
-          <div id="chartContainer" style="height: 300px; width: 60%;"></div>
+          <div id="chartContainer" style="height: 300px; width: 80%;"></div>
           `;
     chartContainerCoins.style.height = "80%";
   }

@@ -457,7 +457,6 @@ div#alertOfCoins {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 div#alertOfSearch {
@@ -513,105 +512,120 @@ div#alertOfGraph {
   color: white;
 }
 
-
 .btn-warning {
-    margin: 20px;
+  margin: 20px;
 }
 
+@media ((min-width: 300px) and (max-width: 768px)) {
 
 
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url(assets/images/gold-bitcoin-logo-emerging-from-beautiful-earth-scenery-free-photo.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+  }
 
 
+  .navbar {
+    width: 100%;
+    text-align: center;
+  }
 
 
+  .ring {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 3px solid #3c3c3c;
+    border-radius: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .ring:before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 40px;
+    height: 40px;
+    border: 3px solid transparent;
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    border-radius: 50%;
+    animation: animateC 1s linear infinite;
+  }
+  .span-ring {
+    display: block;
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 50%;
+    width: 50%;
+    height: 4px;
+    background: transparent;
+    transform-origin: left;
+    animation: animate 1s linear infinite;
+  }
+  .span-ring:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: yellow;
+    top: -6px;
+    right: -8px;
+    box-shadow: 0 0 20px gold;
+  }
+
+  .btn-warning {
+    margin-top: 30px;
+  }
 
 
+  .card {
+    margin: 15px;
+    padding: 5px;
+    width: 230px;
+    height: 300px;
+  }
 
+  .chartContainerCoins {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-@media  ((min-width:300px) and (max-width: 768px)) {
-    /* Adjustments for smaller screens */
+  blockquote {
+    width: 300px;
+  }
 
-    body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        background-image: url(assets/images/gold-bitcoin-logo-emerging-from-beautiful-earth-scenery-free-photo.webp);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center center;
-    }
-  
-    /* Example: Make the navigation bar full width and center content */
-    .navbar {
-      width: 100%;
-      text-align: center;
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
 
-    }
-  
-    /* Example: Adjust margins for smaller screens */
-    #container {
-      margin-top: 15px;
-    }
-  
-    /* Example: Adjust the size of the ring for smaller screens */
-    .ring {
-        position: absolute;
-        top: 85%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 40px;
-        height: 40px;
-        background: transparent;
-        border: 3px solid #3c3c3c;
-        border-radius: 50%;
-        text-align: center;
-        text-transform: uppercase;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    }
+  blockquote > p {
+    font-size: small;
+  }
 
-    .ring:before {
-        content: "";
-        position: absolute;
-        top: -3px;
-        left: -3px;
-        width: 40px;
-        height: 40px;
-        border: 3px solid transparent;
-        border-top: 3px solid white;
-        border-right: 3px solid white;
-        border-radius: 50%;
-        animation: animateC 1s linear infinite;
-      }
-      .span-ring {
-        display: block;
-        position: absolute;
-        top: calc(50% - 2px);
-        left: 50%;
-        width: 50%;
-        height: 4px;
-        background: transparent;
-        transform-origin: left;
-        animation: animate 1s linear infinite;
-      }
-      .span-ring:before {
-        content: "";
-        position: absolute;
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        background: yellow;
-        top: -6px;
-        right: -8px;
-        box-shadow: 0 0 20px gold;
-      }
-  
-    /* Example: Modify the styles for the card on smaller screens */
-    .card {
-      margin: 15px;
-      padding: 5px;
-      width: 230px;
-      height: 300px;
-    }
-}  
+  .testimonial {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+}
