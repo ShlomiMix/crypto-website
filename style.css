@@ -185,8 +185,6 @@ div#navbarSupportedContent {
 }
 
 .navbar {
-  position: fixed;
-  z-index: 10;
   width: 100%;
 }
 
@@ -537,6 +535,7 @@ div#alertOfGraph {
     .navbar {
       width: 100%;
       text-align: center;
+      
     }
   
     /* Example: Adjust margins for smaller screens */
@@ -546,15 +545,25 @@ div#alertOfGraph {
   
     /* Example: Adjust the size of the ring for smaller screens */
     .ring {
-      width: 30px;
-      height: 30px;
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 3px solid #3c3c3c;
+        border-radius: 50%;
+        text-align: center;
+        text-transform: uppercase;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     }
   
     /* Example: Modify the styles for the card on smaller screens */
     .card {
       margin: 15px;
       padding: 5px;
-      width: 100%;
-      height: auto;
+      width: 250px;
+      height: 300px;
     }
 }  
