@@ -570,6 +570,42 @@ div#alertOfGraph {
         text-transform: uppercase;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     }
+
+    .ring:before {
+        content: "";
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        width: 40px;
+        height: 40px;
+        border: 3px solid transparent;
+        border-top: 3px solid white;
+        border-right: 3px solid white;
+        border-radius: 50%;
+        animation: animateC 1s linear infinite;
+      }
+      .span-ring {
+        display: block;
+        position: absolute;
+        top: calc(50% - 2px);
+        left: 50%;
+        width: 50%;
+        height: 4px;
+        background: transparent;
+        transform-origin: left;
+        animation: animate 1s linear infinite;
+      }
+      .span-ring:before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: yellow;
+        top: -6px;
+        right: -8px;
+        box-shadow: 0 0 20px gold;
+      }
   
     /* Example: Modify the styles for the card on smaller screens */
     .card {
