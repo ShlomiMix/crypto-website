@@ -519,3 +519,42 @@ div#alertOfGraph {
 .btn-warning {
     margin: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+  
+    /* Example: Make the navigation bar full width and center content */
+    .navbar {
+      width: 100%;
+      text-align: center;
+    }
+  
+    /* Example: Adjust margins for smaller screens */
+    #container {
+      margin-top: 15px;
+    }
+  
+    /* Example: Adjust the size of the ring for smaller screens */
+    .ring {
+      width: 30px;
+      height: 30px;
+    }
+  
+    /* Example: Modify the styles for the card on smaller screens */
+    .card {
+      margin: 15px;
+      padding: 5px;
+      width: 100%;
+      height: auto;
+    }
+}  

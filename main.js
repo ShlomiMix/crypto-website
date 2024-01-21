@@ -7,7 +7,6 @@ let selectedCoins = localStorage.getItem("selectedCoins")
 const twoMinutes = 1000 * 120;
 let sortByLocalCompare = "A-Z";
 let sortByHighToLow = "Price (high - low)";
-let sortBySelectedCoins = "Selected Coins";
 const updateInterval = 2000;
 let graphInterval;
 
@@ -116,32 +115,8 @@ function removeSearchBox() {
     );
   }
 
-  // sort coins by by selected coins array
-
-  function sortSelectedCoins() {
-    const sortingSelectedCoins =
-      sortBySelectedCoins === "Selected Coins" ? 1 : -1;
-    sortBySelectedCoins =
-      sortBySelectedCoins === "Selected Coins"
-        ? "Not Selected Coins"
-        : "Selected Coins";
-    sortButtons((coinA, coinB) => {
-      const inputA = document.getElementById(coinA.id);
-      const inputB = document.getElementById(coinB.id);
-      if (inputA.checked) {
-        if (inputB.checked) {
-          return 0;
-        }
-
-        return sortingSelectedCoins * -1;
-      }
-
-      return sortingSelectedCoins;
-    });
-  }
-
+  
   // sort coins by price
-
   function sortByPrice() {
     const sortingHighToLow = sortByHighToLow === "Price (high - low)" ? 1 : -1;
     sortByHighToLow =
@@ -171,7 +146,6 @@ function removeSearchBox() {
     <div class="buttons-container">
     <button type="button" class="btn btn-warning" id="sortByAlphabet">${sortByLocalCompare}</button>
     <button  type="button" class="btn btn-warning" id="sortHighToLow">${sortByHighToLow}</button>
-    <button  type="button" class="btn btn-warning" id="sortSelectedCoins">${sortBySelectedCoins}</button>
     <button  type="button" class="btn btn-warning" id="default">Default</button>
     </div>`;
   }
@@ -265,8 +239,6 @@ function removeSearchBox() {
 
     addOnclickFunctionToElement("sortHighToLow", sortByPrice);
 
-    addOnclickFunctionToElement("sortSelectedCoins", sortSelectedCoins);
-
     addOnclickFunctionToElement("default", showDefaultCoins);
 
     // catch all inputs and give a change event
@@ -278,7 +250,7 @@ function removeSearchBox() {
         checkIfInputChecked(input, card);
       });
     }
-    // catch all buttons on cards
+    // catch all buttons more info on cards
     const buttons = document.querySelectorAll(".card > .btn-info");
     for (const btn of buttons) {
       btn.addEventListener("click", toggleMoreInfo);
