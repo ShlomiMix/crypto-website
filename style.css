@@ -1,6 +1,6 @@
 html,
 body {
-  height: 100vh;
+  height: 100%;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -528,14 +528,26 @@ div#alertOfGraph {
 
 
 
-@media screen and (max-width: 768px) {
+@media  ((min-width:300px) and (max-width: 768px)) {
     /* Adjustments for smaller screens */
+
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-image: url(assets/images/gold-bitcoin-logo-emerging-from-beautiful-earth-scenery-free-photo.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+    }
   
     /* Example: Make the navigation bar full width and center content */
     .navbar {
       width: 100%;
       text-align: center;
-      
+
     }
   
     /* Example: Adjust margins for smaller screens */
@@ -563,7 +575,7 @@ div#alertOfGraph {
     .card {
       margin: 15px;
       padding: 5px;
-      width: 250px;
+      width: 230px;
       height: 300px;
     }
 }  
