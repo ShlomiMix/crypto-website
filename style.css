@@ -629,4 +629,10 @@ div#alertOfGraph {
     display: flex;
     justify-content: center;
   }
+
+  .svgIcon {
+    border: none;
+    border-radius: 50%;
+    background-color: red;
+  }
 }
