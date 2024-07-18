@@ -1,7 +1,5 @@
 # 💰 CryptoLive
 
-![CryptoLive Logo](https://your-logo-url.com/logo.png)
-
 ## Introduction
 
 CryptoLive is a dynamic cryptocurrency website that displays the top 50 popular crypto coins with detailed information including their values in USD, EUR, and ILS. Users can also view real-time values of selected coins on an interactive graph.
