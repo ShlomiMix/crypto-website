@@ -69,4 +69,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-![CryptoLive Logo](https://your-logo-url.com/logo-footer.png)
